@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super somas</title>
+    <style>
+        body {
+            font: normal 10pt Times New Roman;
+        }
+        .par {
+            border: solid 1px red;
+        }
+        .impar {
+            border: solid 1px green;
+        }
+    </style>
+</head>
+<body>
+    <form action="somar">
+        <h1>Somas Pares ou Impares</h1>
+        <label for="#num1">
+            Primeiro número<input type="text" id="num1">
+            Segundo número<input type="text" id="num2">
+            <input type="submit" value="efetuar" onclick="somar()">
+            <h1>Últimas Somas:</h1>
+            <h1 class="par">Pares:</h1>
+            <h1 class="impar">Ímpares:</h1>
+        </label>
+    </form>
+    <script>
+        var n1 = parseInt(prompt("Digite o primeiro numero: "));
+        var n2 = parseInt(prompt("Digite o segundo numero: "));
+        function somar(n1, n2) {
+            let soma = n1 + n2; 
+            return soma;
+        }
+        // n1.document.querySelector("#num1").innerHTML = `O numero 1 é ${n1}`
+        //if (soma = ) {
+        //h1.document.querySelector(".par").innerHTML = 'par';
+        //}
+        //if (soma = 2) {}
+    </script>
+</body>
+</html>
